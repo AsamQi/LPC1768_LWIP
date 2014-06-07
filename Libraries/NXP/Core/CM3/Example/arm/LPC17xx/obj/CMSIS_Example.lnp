@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\obj\core_cm3.o"
+".\obj\startup_lpc17xx.o"
+".\obj\system_lpc17xx.o"
+".\obj\main_lpc17xx.o"
+--strict --scatter ".\obj\CMSIS_Example.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lst\CMSIS_Example.map" -o .\obj\CMSIS_Example.axf
